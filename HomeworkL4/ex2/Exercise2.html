@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EXERCISE2</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+	$(document).ready(function(){
+		$("button").click(function(){
+		$("div").animate({
+			height: "toggle"
+		});
+		var div = $("div");
+		div.animate({right: '200px'}, 1500);
+		div.animate({left: '200px'}, 1500);
+        div.animate({fontSize: '3em'}, "slow");
+		});
+	});
+	
+</script>
+	<style type="text/css">
+		button {
+		 margin-left: 180px;}
+	</style>
+<body>
+	<article>Click the button</article><br>
+	<button>HERE</button>
+	<p></p>
+	<div style="position:absolute; height:300px; width:400px; background-color:blue; text-align:center; display:none"><b>HAVE A NICE DAY</b></div>
+
+</body>
+</html>	

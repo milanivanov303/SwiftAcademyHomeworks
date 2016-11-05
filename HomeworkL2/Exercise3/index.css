@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+}
+footer {
+	display: block;
+	background-color: yellow;
+	float: right;
+	float: bottom;
+	width: 150px;
+	heigth: 150px;
+	color: white;
+	text-align: center;
+}
+img {
+	
+	height: 50%;
+    width: 50%;
+}
+
+h3 {
+	font-size: 100px;
+	font-family: sans-serif;
+}
+p {
+	margin-left: 120px;
+	margin-right: 120px;
+	font-size: 26px;
+}
+
+function myFunction() {
+    document.getElementById("panel").style.display = "block";
+}
+
+#panel, .flip {
+    font-size: 26px;
+    background-color: #4CAF50;
+    color: white;
+    margin: auto;
+}
+
+#panel {
+    display: none;
+}

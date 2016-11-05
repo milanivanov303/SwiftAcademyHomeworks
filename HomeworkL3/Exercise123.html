@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EXERCISE123</title>
+</head>
+<body>
+	<p id="proba" style="color:blue"></p>
+	<p id="exercise3"></p>
+	
+	<script>
+		var weight = 150;
+		var firstName = "Pepa";
+		var displayProperties = ["Resolution", "Pixels", "Colour scheme"];
+		var fiat = {engineCub: 1.2, seatMaterial:"Leather", colour:"Gray"};
+		var voting = true;
+		
+		var emptyBottle = null;
+		var emptyBottle = undefined;
+		var emptyBottle1 = null;
+		
+		document.getElementById("proba").innerHTML = typeof 150 + " ; " + typeof "Pepa" + 
+		" ; " + typeof ["Resolution", "Pixels", "Colour scheme"] + " ; " + typeof {engineCub: 1.2, seatMaterial:"Leather", colour:"Gray"} + 
+		" ; " + typeof true;
+		
+		document.getElementById("exercise3").innerHTML = 
+		typeof emptyBottle + "<br>" +
+		typeof emptyBottle1 + "<br>" +
+		(emptyBottle === emptyBottle1) + "<br>" +   //data type is different
+		(emptyBottle == emptyBottle1);              //velue is the same 
+
+    </script>
+</body>	
+</html>

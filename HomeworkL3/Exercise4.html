@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EXERCISE4</title>
+</head>
+<body>
+	<p>Frist number = 36 ; Second number = 20</p>
+	<p id="sybirane" style="color:blue">leflkfel</p>
+	<p id="izvajdane"></p>
+	<p id="umnojenie"></p>
+	<p id="delenie"></p>
+	<p id="kuche"></p>
+	
+	<button onclick="proizvolnoChislo()">Random Number</button>
+	<p id="proizvol"></p>
+	<p id="spisyk"></p>
+	
+	<script>
+		
+		//var dog = {
+			//legs: 4,
+			//furColor: white,
+			//mogaDaLaq: bark() 
+		    //};
+		var unno = 36;
+		var ddue = 20;
+		
+		document.getElementById("sybirane").innerHTML = unno + ddue;
+		document.getElementById("izvajdane").innerHTML = unno - ddue;
+		document.getElementById("umnojenie").innerHTML = unno * ddue;
+		document.getElementById("delenie").innerHTML = unno / ddue;
+		//document.getElementById("kuche").innerHTML = dog.bark();
+		//function bark() {
+		//	console.log("bau-bau");
+		//	document.getElementById("kuche").innerHTML = dog.mogaDaLaq();
+		//}
+		
+		function proizvolnoChislo() {
+			var y = Math.floor((Math.random()* 10000) + 1);
+			document.getElementById("proizvol").innerHTML = y;
+		}
+		
+		var myCars = ["Fiat", "Porsche", "Great Wall", "Lada", "Reno"];
+		document.getElementById("spisyk").innerHTML = myCars[3];
+		
+		function multiply(monthBill, months) {
+			return monthBill*months;
+		}
+		//var expenses = multiply(120, 12);
+		window.alert(120*12);
+		
+		
+	</script>
+</body>
+</html>	

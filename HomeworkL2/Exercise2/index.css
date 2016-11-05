@@ -1,0 +1,26 @@
+body {
+	color: blue;
+	text-decoration: overline;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	text-shadow: 1px 1px black;
+	font-style: oblique;
+}
+p {
+	border: 2px solid black;
+	border-style: inset;
+	border-width:40px;
+	width: 180px;
+	text-align: center;
+	background-color: lightblue;
+}
+span.male {
+	background-color: lightblue;
+	border: 1px white;
+	border-radius: 5px;
+}
+span.female {
+	background-color: pink;
+	border: 1px white;
+	border-radius: 5px;
+}

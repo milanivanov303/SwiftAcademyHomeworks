@@ -1,0 +1,23 @@
+h1{
+	text-align: center;
+	position: fixed;
+	width: 100%;
+}
+table, td {
+	border: 1px solid black;
+	font-style: italic;
+}
+td {
+	height: 20px;
+	padding: 15px;
+}
+table {
+	width: 70%;
+	font-size: 20px;
+}
+tr:hover{
+	background-color:lightblue;
+}
+th {
+	background-color: #f2f2f2;
+}

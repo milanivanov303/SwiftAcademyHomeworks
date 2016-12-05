@@ -1,8 +1,14 @@
 <?php
-$human1 = new Human();
-$human2 = new Human();
-if ($human1->gender == $human2->gender) {
-    return meetPeople();
+require_once 'Ex2.php';
+$dog1 = new Dog();
+$dog2 = new Dog();
+
+
+$spas = new Human("Male", $dog1);
+$roza = new Human("Female", $dog2);
+
+if ($spas->meetPeople($roza)) {
+    echo "can meet";
 } else {
     echo "Can't meet other people.";
 }

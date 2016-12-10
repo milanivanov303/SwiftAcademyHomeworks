@@ -1,25 +1,38 @@
 <?php
-$dog = new Dog();
+require_once 'Ex1.php';
+
 class Human 
 {
-    public $gender = "";
-    public $weight = 80;
-    public $height = 180;
-    public $dog;
+    private $gender;
+    private $weight;
+    private $height;
+    private $dog;
+    
+    public function __construct($gender, Dog $dog) {
+        $this->gender = $gender;
+        $this->dog = $dog;
+        
+    }
     public function walk() {
+        return "Human is walking.";
 }
     public function run() {
+        return "Human is running.";
 }
     public function eat() {
+        return "Human is eating.";
 }
     public function talk() {
+        return "Human is talking.";
 }
-    public function meetPeople() {
+    public function meetPeople(Human $human) {
+        if($this->gender == $human->gender) {
+            return false;
+        }
+        return true;
 }
 }
 
-$chovek = new Human();
-print_r($chovek->dog);
 
 
 ?>
